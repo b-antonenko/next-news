@@ -102,27 +102,9 @@ Start production:
 npm start
 ```
 
-(Adjust if your `package.json` scripts differ.)
-
 ## Database
 
 SQLite file: `data.db` (committed locally for simplicity).
-
-Example insert (using `sqlite3` CLI):
-
-```sql
-INSERT INTO news (title, slug, content, image, date)
-VALUES ('Sample Headline', 'sample-headline', 'Body text...', 'sample.jpg', '2025-01-15');
-```
-
-To explore:
-
-```bash
-sqlite3 data.db
-.tables
-.schema news
-SELECT * FROM news LIMIT 5;
-```
 
 ## Adding Features (Ideas)
 
@@ -139,11 +121,10 @@ No environment variables required currently. If externalizing DB path, introduce
 
 - Modal dismiss via backdrop click (`router.back()`)
 - Links remain standard for SEO
-- Could enhance with focus trap & ESC handling
 
 ## License
 
-Educational / demo purposes.
+demo purposes.
 
 ## Summary
 
