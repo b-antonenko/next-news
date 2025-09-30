@@ -1,13 +1,11 @@
-'use client';
-
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getNewsItem } from '@/lib/news';
 
-export default async function NewsDetailPage({params}) {
+export default function NewsDetailPage({params}) {
 
     const newsSlug = params.slug;
-    const newsItem = await getNewsItem(newsSlug);
+    const newsItem = getNewsItem(newsSlug);
 
     console.log('News Item:', newsItem);
 
