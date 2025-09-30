@@ -1,5 +1,5 @@
-export function GET(request) {
-  // console.log('Received request:', request.url);
+// export function GET(request) {
+//   // console.log('Received request:', request.url);
 
-  return new Response('Hello, Next.js!');
-};
+//   return new Response('Hello, Next.js!');
+// };
